@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.hi{
+            position: relative;
+            top: 200px;
+            left: 300px;
+            background-color: rgb(255, 192, 192);
+            width: 800px;
+            height: 1000px;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+        div.ha{
+            position: absolute;
+            background-color: white;
+            width: 750px;
+            height: 210px;
+            top: 30px;
+            left: 21px;
+        }
+        h1{
+            position: absolute;
+            left: 170px;
+            font-size: 40px;
+            color: palevioletred;
+
+        }
+        p{
+            position: absolute;
+            top: 70px;
+            left: 215px;
+            font-size: 23px;
+            
+        }
+        div.he{
+            position: absolute;
+            background-color: blueviolet;
+            top: 150px;
+            width: 750px;
+            height: 60px;
+        }
+        div.ho{
+            position: absolute;
+            width: 550px;
+            height: 700px;
+            background-color: white ;
+            top: 230px;
+        }
+        div.hu{
+            position: absolute;
+            width: 180px;
+            height: 700px;
+            background-color: white ;
+            top: 230px;
+            left: 570px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hi">
+        
+        <div class="ha">
+            <h1>Website Quản Trị Mạng</h1>
+            <p style="color: palevioletred;">Kiến thức - Kinh nghiệm - Hỏi đáp </p>
+            <div class="he">
+                <span style="color: white; position: absolute; top: 17px; left: 5px; font-size: 20px;">Làng công nghệ</span>
+                <span style="color: white; position: absolute; top: 17px; left: 170px; font-size: 20px;">Công nghệ</span>
+                <span style="color: white; position: absolute; top: 17px; left: 290px; font-size: 20px;">Cuộc sống</span>
+                <span style="color: white; position: absolute; top: 17px; left: 650px; font-size: 20px;" >Đăng ký</span>
+
+            </div>
+            <div class="ho">
+                <h2 style="position: absolute; left: 30px;"> Form - Biểu mẫu trong CSS</h2>
+                <p style="position: absolute; top: 50px; left: 30px; font-size: 15px;"> Quách Tỉnh, 14/02/2019</p>
+                <img src="https://cdn2.fptshop.com.vn/unsafe/800x0/meme_cho_1_e568e5b1a5.jpg" style="width: 80%; height: 80%; position: absolute; top: 90px; left: 30px;">
+            </div>
+            <div class="hu">
+                <h2 style="position: absolute; left: 30px;"> Giới thiệu</h2>
+                <img src="data:image/jpeg;base64,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" style="height: 40%; width: 80%; position: absolute; top: 90px; left: 20px;">
+                <p style="position: absolute; top: 400px ; left: 20px; font-size: 17px;">Chó là loài động vật trung thành, gần gũi với con người. Chúng được thuần hóa từ loài sói và có nhiều giống với kích thước, tính cách khác nhau. Ngoài làm thú cưng, chó còn tham gia nhiều nhiệm vụ như canh gác, hỗ trợ người khuyết tật và tìm kiếm cứu hộ.</p>
+
+            </div>
+   
+        </div>
+        
+
+
+    </div>
+    
+</body>
+</html>
+
