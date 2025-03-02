@@ -1,0 +1,567 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ======= HEADER ======= */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full màn hình */
+    background: url('image/01.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 50px;
+}
+
+/* ======= NAVBAR (Flexbox) ======= */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo bên trái - Menu bên phải */
+    width: 100%;
+}
+
+/* ======= LOGO CONTAINER ======= */
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Xếp logo + chữ theo chiều dọc */
+    align-items: flex-start; /* Căn về góc trái */
+}
+
+.logo-container img {
+    width: 120px; /* Điều chỉnh kích thước logo */
+}
+
+/* Chữ nằm dưới logo */
+.logo-container h1 {
+    margin-top: 10px; /* Khoảng cách giữa logo và chữ */
+    font-size: 28px;
+    color: white; /* Đổi màu chữ theo nền */
+    font-weight: bold;
+}
+
+/* ======= MENU ======= */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px; /* Tạo khoảng cách giữa các mục menu */
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white; /* Đổi màu chữ */
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* ======= Căn chỉnh bố cục ======= */
+.ab-bg {
+    display: flex;
+    justify-content: space-between; /* Chia hai cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 50px;
+    width: 100%;
+}
+
+/* ======= Vùng chữ ======= */
+#about {
+    flex: 1; /* Chiếm phần bên trái */
+    max-width: 50%; /* Giới hạn chiều rộng */
+}
+
+/* ======= Ảnh ======= */
+#about img {
+    width: 100%; /* Ảnh thu nhỏ lại phù hợp */
+    max-width: 450px; /* Giới hạn chiều rộng ảnh */
+    display: block; /* Loại bỏ khoảng trắng dư thừa */
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ======= SERVICE SECTION ======= */
+.m-bg {
+    padding: 50px 0;
+}
+
+/* Tiêu đề trung tâm */
+.s-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Dùng flexbox để căn chỉnh dịch vụ */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap; /* Không cho phép xuống dòng */
+    justify-content: space-between; /* Giãn cách đều */
+    overflow-x: auto; /* Cuộn ngang nếu không đủ chỗ */
+    gap: 20px; /* Khoảng cách giữa các thẻ */
+}
+
+/* Card dịch vụ */
+.card-one {
+    width: 300px; /* Kích thước cố định */
+    flex-shrink: 0; /* Không bị thu nhỏ */
+    display: flex;
+    flex-direction: column; /* Nội dung xếp theo chiều dọc */
+    align-items: center; /* Căn giữa hình ảnh và text */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Hình ảnh */
+.card-one img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Nội dung dịch vụ */
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.bg-color-one {
+    padding: 50px 0;
+}
+
+/* Tiêu đề menu */
+.m-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chính của menu */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap; /* Các món ăn xuống hàng nếu không đủ chỗ */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Mỗi món ăn trong menu */
+.menu-one {
+    display: flex;
+    align-items: center;
+    width: 48%; /* Hai món trên mỗi hàng */
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Hình ảnh món ăn */
+.menu-one img {
+    width: 100px; /* Giữ hình ảnh nhỏ gọn */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Nội dung menu */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề + giá tiền */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dấu gạch ngang giữa món ăn và giá */
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+/* Mô tả món ăn */
+.content p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.t-color {
+    display: flex;
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;      /* Căn giữa theo chiều dọc */
+    height: 100vh;            /* Chiều cao toàn màn hình */
+    background-color: #333;   /* Màu nền */
+    color: white;
+}
+
+/* Bố cục nội dung */
+.t-one {
+    display: flex;
+    flex-direction: column;  /* Sắp xếp theo chiều dọc */
+    align-items: center;     /* Căn giữa nội dung */
+    text-align: center;
+    padding: 30px;
+    border: 2px solid white;
+    width: 400px;  /* Giới hạn chiều rộng */
+}
+
+/* Tiêu đề chính */
+.t-two {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Khoảng cách giữa các dòng */
+.t-one p {
+    margin: 5px 0;
+}
+.t-color{
+    background: url('image/Opening Hour.jpg') no-repeat center center/cover;
+}
+
+.ga-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8; /* Màu nền */
+    padding: 50px 0;
+}
+
+/* Tiêu đề gallery */
+.g-one {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Lưới ảnh gallery */
+.g-3 {
+    display: flex;
+    flex-wrap: wrap;  /* Cho phép các ảnh xuống hàng nếu không đủ không gian */
+    justify-content: center;
+    gap: 20px;  /* Khoảng cách giữa các ảnh */
+    max-width: 1200px;
+}
+
+/* Ảnh gallery */
+.g-two {
+    width: 250px;  /* Kích thước ảnh */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Ảnh */
+.g-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
+    border-radius: 10px;
+}
+
+.bn-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222; /* Màu nền tối */
+    padding: 50px 0;
+    color: white;
+}
+
+/* Tiêu đề blog */
+.bn-one {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chính của blog */
+.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Khối bài viết */
+.bn-two {
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Nền trong suốt nhẹ */
+}
+
+/* Ngày tháng */
+.bn-two p:first-child {
+    font-weight: bold;
+    color: #f4b400; /* Màu vàng */
+}
+
+/* Tiêu đề bài viết */
+.bn-two h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Nội dung bài viết */
+.bn-two p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Nút cuối bài */
+.bn-three {
+    background-color: #f4b400;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.r-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+/* Tiêu đề Reviews */
+.r-one {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chính của review */
+.r-bg > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Card Review */
+.card {
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Hình ảnh */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Tiêu đề Review */
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Nội dung */
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Ngôi sao đánh giá */
+.card i {
+    color: gold;
+    margin: 2px;
+}
+
+.chefs-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Tiêu đề Meet Our Chefs */
+.c-one {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Bố cục chính của các chef */
+.chefs-bg > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+/* Thông tin chef */
+.c-two {
+    width: 300px;
+    text-align: center;
+}
+
+/* Hình ảnh chef */
+.c-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.con-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Tiêu đề Contact Us */
+.c-one {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chứa form */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 800px;
+}
+
+/* Form chiếm 50% */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* Input & Textarea */
+.contact-form .form-floating {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Nút gửi */
+.button-one {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button-one:hover {
+    background-color: #cc5200;
+}
+
+/* ===== FOOTER SECTION ===== */
+.ft-imgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Bố cục 3 phần: Location - Opening Hour - Contact Us */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 50px;
+    max-width: 800px;
+}
+
+/* Các khối trong Footer */
+.f-one {
+    flex: 1;
+}
+
+/* Footer cuối */
+.end-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 30px 0;
+    color: white;
+}
+
+/* Logo footer */
+.en-one {
+    display: flex;
+    justify-content: center;
+}
+
+/* Bản quyền */
+.en-two {
+    text-align: center;
+}
+
+/* Icon mạng xã hội */
+.en-three .icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.en-three .icon i {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.en-three .icon i:hover {
+    color: #ff6600;
+}
+
+
+
